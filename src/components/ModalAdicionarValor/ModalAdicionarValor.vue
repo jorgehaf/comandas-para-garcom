@@ -1,6 +1,6 @@
 <template>
   <div id="modal-adicionar-valor" v-if="objetoModalAdicionarValor.exibirModalAdicionarValor">
-    <div id="modal-container">
+    <div id="modal-container" class="animate__animated animate__fadeIn">
       <div id="container-adicionar-valor-mesa" v-if="ehComandaMesa">
         <h3>Adicionar valor à mesa {{ objetoModalAdicionarValor.idMesaComandaModificada }}.</h3>
       </div>
@@ -13,7 +13,7 @@
         R$
         <input class="input" type="number" placeholder="0" v-model="valor" />
       </div>
-      <button class="button" @click="adicionar()">Adicionar valor</button>
+      <button class="button" @click="adicionarValor()">Adicionar valor</button>
     </div>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
     },
   },
   methods: {
-    async adicionar() {
+    async adicionarValor() {
       if (this.ehComandaMesa) {
         await this.$store.dispatch("adicionarValorÀMesa", {
           idMesaComandaModificada: this.objetoModalAdicionarValor.idMesaComandaModificada,

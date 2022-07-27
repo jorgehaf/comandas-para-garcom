@@ -7,6 +7,7 @@
 
 <script>
 import ModalAdicionarValor from "@/components/ModalAdicionarValor/ModalAdicionarValor";
+import "animate.css";
 
 export default {
   components: { ModalAdicionarValor },

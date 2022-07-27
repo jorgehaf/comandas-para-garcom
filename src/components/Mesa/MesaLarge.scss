@@ -6,7 +6,7 @@
     border: 1px solid $dark-liver-horses;
     border-radius: 8px;
     color: $dark-liver-horses;
-    
+
     #mesa-container {
         display: flex;
         flex-direction: column;
@@ -16,8 +16,14 @@
             align-self: center;
         }
 
-        p {
-            margin: 0;
+        .mesa-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                margin: 2px 0;
+            }
         }
 
         .button {

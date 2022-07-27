@@ -26,6 +26,12 @@
         color: $dark-liver-horses;
     }
 
+    .input::-webkit-outer-spin-button,
+    .input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
     .button {
         margin-top: 8px;
         background-color: $dark-liver-horses;

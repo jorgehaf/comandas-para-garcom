@@ -2,9 +2,16 @@
   <div id="mesa">
     <div id="mesa-container">
       <h1>Mesa {{ mesa.id }}</h1>
-      <p>
-        Comanda da mesa: <strong>R${{ mesa.comanda.toFixed(2) }}</strong>
-      </p>
+      <div class="mesa-row">
+        <p>Comanda da mesa:</p>
+        <p>
+          <strong>R${{ mesa.comanda.toFixed(2) }}</strong>
+        </p>
+      </div>
+      <div class="mesa-row">
+        <p>Comandas individuais:</p>
+        <p>{{ numeroComandas }}</p>
+      </div>
       <button class="button" @click="adicionarValor($enums.tipoComanda.mesa, mesa.id)">Adicionar valor à mesa {{ mesa.id }}</button>
       <button class="button" @click="adicionarCadeira(mesa.id)">Adicionar comanda individual</button>
 
@@ -24,11 +31,11 @@ export default {
   components: { Cadeira },
   props: ["mesa"],
   computed: {
-    numeroCadeiras() {
+    numeroComandas() {
       return this.mesa.cadeiras.length;
     },
     contaDividida() {
-      return this.mesa.comanda / this.numeroCadeiras;
+      return this.mesa.comanda / this.numeroComandas;
     },
   },
   methods: {

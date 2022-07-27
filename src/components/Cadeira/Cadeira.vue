@@ -1,15 +1,24 @@
 <template>
   <div id="cadeira">
     <h4>Comanda {{ cadeira.id }}</h4>
-    <p>
-      Fatia da comanda da mesa: <strong>R${{ parteComandaMesa.toFixed(2) }}</strong>
-    </p>
-    <p>
-      Comanda individual: <strong>R${{ cadeira.comanda.toFixed(2) }}</strong>
-    </p>
-    <p>
-      Total a pagar: R$<strong>{{ totalAPagar }}</strong>
-    </p>
+    <div class="cadeira-row">
+      <p>Fatia da comanda da mesa:</p>
+      <p>
+        <strong>R${{ parteComandaMesa.toFixed(2) }}</strong>
+      </p>
+    </div>
+    <div class="cadeira-row">
+      <p>Comanda individual:</p>
+      <p>
+        <strong>R${{ cadeira.comanda.toFixed(2) }}</strong>
+      </p>
+    </div>
+    <div class="cadeira-row">
+      <p>Total a pagar:</p>
+      <p>
+        R$<strong>{{ totalAPagar }}</strong>
+      </p>
+    </div>
     <button class="button" @click="adicionarValorCadeira($enums.tipoComanda.cadeira, cadeira.idMesa, cadeira.id)">Adicionar valor à comanda {{ cadeira.id }}</button>
   </div>
 </template>

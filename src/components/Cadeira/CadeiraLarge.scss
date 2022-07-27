@@ -8,8 +8,14 @@
         margin: 4px 0;
     }
 
-    p {
-        margin: 0;
+    .cadeira-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+            margin: 2px 0;
+        }
     }
 
     .button {
