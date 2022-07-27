@@ -1,0 +1,33 @@
+#saguao {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $dutch-white;
+    overflow: auto;
+
+    #botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0;
+
+        .button {
+            font-size: 18px;
+            background-color: $dark-liver-horses;
+            color: $white;
+        }
+    }
+
+    #mesas {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .mesa {
+            width: 48%;
+            min-width: 320px;
+            max-width: 540px;
+            margin-bottom: 32px;
+        }
+    }
+}

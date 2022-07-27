@@ -1,0 +1,20 @@
+.button {
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+}
+
+.button:hover {
+  outline: none !important;
+  cursor: pointer;
+}
+
+.input {
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+}
+
+.input:focus {
+  outline: none !important;
+}

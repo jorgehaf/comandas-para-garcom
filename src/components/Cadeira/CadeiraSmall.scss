@@ -1,0 +1,20 @@
+#cadeira {
+    padding: 16px;
+    box-shadow: 0px 0px 10px 2px $dark-liver-horses-shadow;
+    margin: 8px 0;
+    border-radius: 4px;
+
+    h4 {
+        margin: 4px 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .button {
+        margin-top: 8px;
+        background-color: $dark-liver-horses;
+        color: $white;
+    }
+}
