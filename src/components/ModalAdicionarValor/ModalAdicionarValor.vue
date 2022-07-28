@@ -11,7 +11,7 @@
 
       <div id="input-valor">
         R$
-        <input class="input" type="number" placeholder="0" v-model="valor" />
+        <input class="input" @keyup.enter="adicionarValor()" type="number" placeholder="0" v-model="valor" />
       </div>
       <button class="button" @click="adicionarValor()">Adicionar valor</button>
     </div>
