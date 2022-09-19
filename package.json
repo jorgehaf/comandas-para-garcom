@@ -1,10 +1,12 @@
 {
-  "name": "teste-seedz",
+  "name": "comandas",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve:local": "vue-cli-service serve --mode local",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:prod": "vue-cli-service build --mode prod"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.7",
